@@ -1,0 +1,2 @@
+gcc -c -Wall cellule.o plateau.c
+makefile:10: recipe for target 'plateau.o' failed
