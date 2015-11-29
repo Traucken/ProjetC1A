@@ -21,11 +21,11 @@ void creer_Dragon(Bushi *b, Cellule *cell, int joueur){
 void affiche_bushi(Bushi b){
 
 	//printf("Position : %d \n", b->Cellule);
-/*	
+	
 	if (b.alive == 1){
 		printf("En vie");	
 	}
-	if (b.alive == 0) {
+	if (b.alive==0) {
 		printf("Hors jeu");
 	}
 	if (b.type == 1){
@@ -38,14 +38,35 @@ void affiche_bushi(Bushi b){
 	if (b.type == 3){
 		printf("Ce bushi est un Dragon");
 	}	
-*/
-	printf("type : %d\n",b.type);
-	printf("joueur : %d\n",b.joueur);
-	printf("alive : %d\n",b.alive);
 	
 
 }
+	
+//Tableau des Bushis
 
+Bushi tab[24];
 
-
+void Tab_Bushi (Bushi *b, Bushi tab[][]){
+	
+	int i=0;
+	int j=0;
+	int a;
+	int b;
+	
+	// Dragon
+	for (a=0;a<24;a++){
+		for (b=0;b<a;b++){
+			if ((a=0 && b=1) || (a=0 && b=8)|| (a=9 && b=1) || || (a=9 && b=8) ){
+		
+				tab[i][j]->type = 3;
+				tab[i][j]->alive = 1;
+				tab[i][j]->c.x = a;
+				tab[i][j]->c.y = b;
+				tab[i][j]->c.type = 0;
+				tab[i][j]->c.occupe = 0;
+				tab[i][j]->c.valide = 1;
+		
+			}
+		}
+	}
 
