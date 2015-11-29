@@ -21,11 +21,11 @@ void creer_Dragon(Bushi *b, Cellule *cell, int joueur){
 void affiche_bushi(Bushi b){
 
 	//printf("Position : %d \n", b->Cellule);
-	
+/*	
 	if (b.alive == 1){
 		printf("En vie");	
 	}
-	if (b.alive==0) {
+	if (b.alive == 0) {
 		printf("Hors jeu");
 	}
 	if (b.type == 1){
@@ -38,6 +38,10 @@ void affiche_bushi(Bushi b){
 	if (b.type == 3){
 		printf("Ce bushi est un Dragon");
 	}	
+*/
+	printf("type : %d\n",b.type);
+	printf("joueur : %d\n",b.joueur);
+	printf("alive : %d\n",b.alive);
 	
 
 }

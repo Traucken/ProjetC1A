@@ -10,7 +10,7 @@
 typedef struct Bushi Bushi;
 struct Bushi {
 	int type; // 1=Singe, 2=Lion, 3= Dragon	
-	*Cellule c; // Cellule du Bushi	
+	Cellule *c; // Cellule du Bushi	
 	int joueur; // Joueur à qui appartient le bushi 	
 	int alive; // 1 = En vie, 0= Hors-jeu
 };
